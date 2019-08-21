@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>炒面的博客  | 如何用Hugo搭建个人博客</title>
+    <title>炒面的博客  | 如何用Hugo搭建个人博客(Windows 10)</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.57.2" />
     
@@ -25,26 +25,77 @@
 
     
 
-    <meta property="og:title" content="如何用Hugo搭建个人博客" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="如何用Hugo搭建个人博客(Windows 10)" />
+<meta property="og:description" content="具体操作步骤如下：
+ 前往Hugo官网(gohugo.io)下载安装程序，并完成本地安装；
+ 选定用于存放创建博客的目录(没有可自行创建)，并通过命令行操作进入该目录；
+ 命令行操作：&rsquo;hugo new site xxxxxx.github.io-creator&rsquo; (xxxxxx均为小写，并与github的ID保持一致)；
+ 通过命令行进入上一步操作后生成的目录；
+ 命令行操作：&rsquo;git init&rsquo;，创建本地仓库；
+ 命令行操作: &lsquo;git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke&rsquo;,&lsquo;echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &gt;&gt; config.toml&rsquo; 完成主题添加；
+ 命令行操作:&lsquo;hugo new posts\文章标题.md&rsquo; 创建新文章;
+ 通过vscode编辑文章内容（markdown）；
+ 命令行操作: &lsquo;hugo server -D&rsquo; 开启本地服务，以便访问&rsquo;http://localhost:1313/&#39;，若通过&#39;ctrl&#43;c&#39;关闭服务，则无法访问；
+ 配置主题 config.toml;
+ 命令行操作：&rsquo;hugo&rsquo;(此时可新建终端执行命令)，生成public目录；
+ 在外层目录下新建gitignore目录，添加内容&rsquo;//public//&lsquo;，避免后续创建的.git本地仓库发生冲突；
+ 命令行操作进入public目录，执行&rsquo;git init&rsquo;，生成本地仓库；
+ 分别执行&rsquo;git add .&rsquo; ， &lsquo;git commit -v&rsquo; ;
+ 前往Github新建仓库，名为xxxxxx.github.io(xxxxxx均为小写，并与github的ID保持一致);
+ 通过命令行将public的本地仓库&rsquo;push&rsquo;上传至远程仓库；
+ setting &gt;&gt; Github pages 进行相应配置和自定义域名等操作；" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://example.org/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
 <meta property="article:published_time" content="2019-08-21T23:45:19+08:00" />
 <meta property="article:modified_time" content="2019-08-21T23:45:19+08:00" />
-<meta itemprop="name" content="如何用Hugo搭建个人博客">
-<meta itemprop="description" content="">
+<meta itemprop="name" content="如何用Hugo搭建个人博客(Windows 10)">
+<meta itemprop="description" content="具体操作步骤如下：
+ 前往Hugo官网(gohugo.io)下载安装程序，并完成本地安装；
+ 选定用于存放创建博客的目录(没有可自行创建)，并通过命令行操作进入该目录；
+ 命令行操作：&rsquo;hugo new site xxxxxx.github.io-creator&rsquo; (xxxxxx均为小写，并与github的ID保持一致)；
+ 通过命令行进入上一步操作后生成的目录；
+ 命令行操作：&rsquo;git init&rsquo;，创建本地仓库；
+ 命令行操作: &lsquo;git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke&rsquo;,&lsquo;echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &gt;&gt; config.toml&rsquo; 完成主题添加；
+ 命令行操作:&lsquo;hugo new posts\文章标题.md&rsquo; 创建新文章;
+ 通过vscode编辑文章内容（markdown）；
+ 命令行操作: &lsquo;hugo server -D&rsquo; 开启本地服务，以便访问&rsquo;http://localhost:1313/&#39;，若通过&#39;ctrl&#43;c&#39;关闭服务，则无法访问；
+ 配置主题 config.toml;
+ 命令行操作：&rsquo;hugo&rsquo;(此时可新建终端执行命令)，生成public目录；
+ 在外层目录下新建gitignore目录，添加内容&rsquo;//public//&lsquo;，避免后续创建的.git本地仓库发生冲突；
+ 命令行操作进入public目录，执行&rsquo;git init&rsquo;，生成本地仓库；
+ 分别执行&rsquo;git add .&rsquo; ， &lsquo;git commit -v&rsquo; ;
+ 前往Github新建仓库，名为xxxxxx.github.io(xxxxxx均为小写，并与github的ID保持一致);
+ 通过命令行将public的本地仓库&rsquo;push&rsquo;上传至远程仓库；
+ setting &gt;&gt; Github pages 进行相应配置和自定义域名等操作；">
 
 
 <meta itemprop="datePublished" content="2019-08-21T23:45:19&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-21T23:45:19&#43;08:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="57">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="如何用Hugo搭建个人博客"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="如何用Hugo搭建个人博客(Windows 10)"/>
+<meta name="twitter:description" content="具体操作步骤如下：
+ 前往Hugo官网(gohugo.io)下载安装程序，并完成本地安装；
+ 选定用于存放创建博客的目录(没有可自行创建)，并通过命令行操作进入该目录；
+ 命令行操作：&rsquo;hugo new site xxxxxx.github.io-creator&rsquo; (xxxxxx均为小写，并与github的ID保持一致)；
+ 通过命令行进入上一步操作后生成的目录；
+ 命令行操作：&rsquo;git init&rsquo;，创建本地仓库；
+ 命令行操作: &lsquo;git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke&rsquo;,&lsquo;echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &gt;&gt; config.toml&rsquo; 完成主题添加；
+ 命令行操作:&lsquo;hugo new posts\文章标题.md&rsquo; 创建新文章;
+ 通过vscode编辑文章内容（markdown）；
+ 命令行操作: &lsquo;hugo server -D&rsquo; 开启本地服务，以便访问&rsquo;http://localhost:1313/&#39;，若通过&#39;ctrl&#43;c&#39;关闭服务，则无法访问；
+ 配置主题 config.toml;
+ 命令行操作：&rsquo;hugo&rsquo;(此时可新建终端执行命令)，生成public目录；
+ 在外层目录下新建gitignore目录，添加内容&rsquo;//public//&lsquo;，避免后续创建的.git本地仓库发生冲突；
+ 命令行操作进入public目录，执行&rsquo;git init&rsquo;，生成本地仓库；
+ 分别执行&rsquo;git add .&rsquo; ， &lsquo;git commit -v&rsquo; ;
+ 前往Github新建仓库，名为xxxxxx.github.io(xxxxxx均为小写，并与github的ID保持一致);
+ 通过命令行将public的本地仓库&rsquo;push&rsquo;上传至远程仓库；
+ setting &gt;&gt; Github pages 进行相应配置和自定义域名等操作；"/>
 
   </head>
 
@@ -96,14 +147,60 @@
           
         POSTS
       </p>
-      <h1 class="f1 athelas mb1">如何用Hugo搭建个人博客</h1>
+      <h1 class="f1 athelas mb1">如何用Hugo搭建个人博客(Windows 10)</h1>
       
       <time class="f6 mv4 dib tracked" datetime="2019-08-21T23:45:19&#43;08:00">August 21, 2019</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p><img src="/images/img1.png" alt="" /></p>
+
+<p>具体操作步骤如下：</p>
+
+<ol>
+<li><p>前往Hugo官网(gohugo.io)下载安装程序，并完成本地安装；</p></li>
+
+<li><p>选定用于存放创建博客的目录(没有可自行创建)，并通过命令行操作进入该目录；</p></li>
+
+<li><p>命令行操作：&rsquo;hugo new site xxxxxx.github.io-creator&rsquo; (xxxxxx均为小写，并与github的ID保持一致)；</p></li>
+
+<li><p>通过命令行进入上一步操作后生成的目录；</p></li>
+
+<li><p>命令行操作：&rsquo;git init&rsquo;，创建本地仓库；</p></li>
+
+<li><p>命令行操作: &lsquo;git submodule add <a href="https://github.com/budparr/gohugo-theme-ananke.git">https://github.com/budparr/gohugo-theme-ananke.git</a> themes/ananke&rsquo;,&lsquo;echo &lsquo;theme = &ldquo;ananke&rdquo;&rsquo; &gt;&gt; config.toml&rsquo; 完成主题添加；</p></li>
+
+<li><p>命令行操作:&lsquo;hugo new posts\文章标题.md&rsquo; 创建新文章;</p></li>
+
+<li><p>通过vscode编辑文章内容（markdown）；</p></li>
+
+<li><p>命令行操作: &lsquo;hugo server -D&rsquo; 开启本地服务，以便访问&rsquo;<a href="http://localhost:1313/'，若通过'ctrl+c'关闭服务，则无法访问；">http://localhost:1313/'，若通过'ctrl+c'关闭服务，则无法访问；</a></p></li>
+
+<li><p>配置主题 config.toml;</p></li>
+
+<li><p>命令行操作：&rsquo;hugo&rsquo;(此时可新建终端执行命令)，生成public目录；</p></li>
+
+<li><p>在外层目录下新建gitignore目录，添加内容&rsquo;//public//&lsquo;，避免后续创建的.git本地仓库发生冲突；</p></li>
+
+<li><p>命令行操作进入public目录，执行&rsquo;git init&rsquo;，生成本地仓库；</p></li>
+
+<li><p>分别执行&rsquo;git add .&rsquo; ， &lsquo;git commit -v&rsquo; ;</p></li>
+
+<li><p>前往Github新建仓库，名为xxxxxx.github.io(xxxxxx均为小写，并与github的ID保持一致);</p></li>
+
+<li><p>通过命令行将public的本地仓库&rsquo;push&rsquo;上传至远程仓库；</p></li>
+
+<li><p>setting &gt;&gt; Github pages 进行相应配置和自定义域名等操作；</p></li>
+
+<li><p>HTTPS不开启，便于测试；</p></li>
+
+<li><p>在Github创建新的仓库(名称xxxxxx.github.io-creator)，并将xxxxxx.github.io-creator的本地仓库上传至该仓库，完成备份。</p></li>
+</ol>
+
+<p>Hugo官方教程参考：<a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a>
+<img src="/images/img2.png" alt="" /></p>
+<ul class="pa0">
   
 </ul>
 <div class="mt6">
